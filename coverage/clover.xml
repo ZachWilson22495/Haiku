@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1643843480893" clover="3.2.0">
+  <project timestamp="1643843480893" name="All files">
+    <metrics statements="31" coveredstatements="31" conditionals="22" coveredconditionals="22" methods="9" coveredmethods="9" elements="62" coveredelements="62" complexity="0" loc="31" ncloc="31" packages="1" files="1" classes="1"/>
+    <file name="haiku.js" path="C:\Users\Zach\Desktop\Haiku\src\js\haiku.js">
+      <metrics statements="31" coveredstatements="31" conditionals="22" coveredconditionals="22" methods="9" coveredmethods="9"/>
+      <line num="3" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="15" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="22" count="3" type="stmt"/>
+      <line num="27" count="5" type="stmt"/>
+      <line num="28" count="5" type="stmt"/>
+      <line num="29" count="5" type="stmt"/>
+      <line num="30" count="22" type="cond" truecount="7" falsecount="0"/>
+      <line num="31" count="8" type="stmt"/>
+      <line num="33" count="14" type="stmt"/>
+      <line num="36" count="5" type="stmt"/>
+      <line num="40" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="44" count="4" type="stmt"/>
+      <line num="45" count="4" type="stmt"/>
+      <line num="50" count="12" type="stmt"/>
+      <line num="51" count="23" type="cond" truecount="5" falsecount="0"/>
+      <line num="52" count="12" type="stmt"/>
+      <line num="66" count="3" type="stmt"/>
+      <line num="67" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

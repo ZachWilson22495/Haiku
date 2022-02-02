@@ -1,0 +1,62 @@
+syllable rules
+
+vowels a, e, i, o, u, sometimes y and w
+
+dipthongs  oi, oy, ou, ow, au, aw, oo, and many others
+
+consonants are all other letters which stop or limit the flow of air from the throat in speech.  
+b, c, d, f, g, h, j, k, l, m, n, p, qu, r, s, t, v, w, x, y, z, ch, sh, th, ph, wh, ng, gh
+
+every syllable in every word must have a vowels
+
+"C" followed by "e, i or y" usually has the soft sound of "s"
+
+"G" followed by "e, i or y" usually has the soft sound of j
+
+when 2 consonants are joined together and form one new sound, they are a consonant digraph.  They count as one sound and one letter and are never seperated.  exp ch, sh, th, ph, and wh
+
+when a syllable ends in a consonant and has only one vowel, that vowel is short. exp bed
+
+when a syllable ends in a silent "e" , the silent "e" is a signal that the vowel in front of it is long. exp gene
+
+when a syllable has 2 vowels togeter, the first vowel is usually long and the second is silent exp eat, boat 
+
+when a syllable ends i any vowel and is the only vowel, that vowel is usually long exp o/pen, u/nit
+
+when a vowel is followed by an "r" in the same syllable, that vowel is "r-controlled" it is not long or short. "R-controlled "er,ir,and ur"
+
+
+
+1. to find the number of syllables:
+
+-count the vowels in the word,
+-subtract any silent vowels,  (like the silent "e/ed" at the end of a word or the second vowel when two vowels are together in a syllable)
+-subtract one vowel from every diphthong, (diphthongs only count as one vowel sound)
+-the number of vowel sounds left is the same as the number of syllables.
+
+The number of syllables that you hear when you pronounce a word is the same as the number of vowels sounds heard. For example:
+The word "came" has 2 vowels, but the "e" is silent, leaving one vowel sound andone syllable.
+The word "outside" has 4 vowels, but the "e" is silent and the "ou" is a diphthong which counts as only one sound, so this word has only two vowels sounds and therefore, two syllables.
+
+2. Divide between two middle consonants.
+Split up words that have two middle consonants. For example:
+hap/pen, bas/ket, let/ter, sup/per, din/ner, and Den/nis. The only exceptions are the consonant digraphs. Never split up consonant digraphs as they really represent only one sound. The exceptions are "th", "sh", "ph", "th", "ch", and "wh".
+
+3. Usually divide before a single middle consonant.
+When there is only one syllable, you usually divide in front of it, as in:
+"o/pen", "i/tem", "e/vil", and "re/port". The only exceptions are those times when the first syllable has an obvious short sound, as in "cab/in".
+
+4. Divide before the consonant before an "-le" syllable.
+When you have a word that has the old-style spelling in which the "-le" sounds like "-el", divide before the consonant before the "-le". For example: "a/ble", "fum/ble", "rub/ble" "mum/ble" and "this/tle". The only exception to this are "ckle" words like "tick/le".
+
+5. Divide off any compound words, prefixes, suffixes and roots which have vowel sounds.
+Split off the parts of compound words like "sports/car" and "house/boat". Divide off prefixes such at "un/happy", "pre/paid", or "re/write". Also divide off suffixes as in the words "farm/er", "teach/er", "hope/less" and "care/ful". In the word "stop/ping", the suffix is actually "-ping" because this word follows the rule that when you add "-ing" to a word with one syllable, you double the last consonant and add the "-ing".
+
+
+const Triangle = require('./triangle.js').triangleModule;
+
+export function Triangle(side1, side2, side3) {
+  this.side1 = side1;
+  this.side2 = side2;
+  this.side3 = side3;
+}
