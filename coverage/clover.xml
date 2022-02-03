@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643843480893" clover="3.2.0">
-  <project timestamp="1643843480893" name="All files">
-    <metrics statements="31" coveredstatements="31" conditionals="22" coveredconditionals="22" methods="9" coveredmethods="9" elements="62" coveredelements="62" complexity="0" loc="31" ncloc="31" packages="1" files="1" classes="1"/>
+<coverage generated="1643846864223" clover="3.2.0">
+  <project timestamp="1643846864223" name="All files">
+    <metrics statements="34" coveredstatements="34" conditionals="22" coveredconditionals="22" methods="11" coveredmethods="11" elements="67" coveredelements="67" complexity="0" loc="34" ncloc="34" packages="1" files="1" classes="1"/>
     <file name="haiku.js" path="C:\Users\Zach\Desktop\Haiku\src\js\haiku.js">
-      <metrics statements="31" coveredstatements="31" conditionals="22" coveredconditionals="22" methods="9" coveredmethods="9"/>
+      <metrics statements="34" coveredstatements="34" conditionals="22" coveredconditionals="22" methods="11" coveredmethods="11"/>
       <line num="3" count="6" type="cond" truecount="2" falsecount="0"/>
       <line num="4" count="1" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
@@ -35,6 +35,9 @@
       <line num="52" count="12" type="stmt"/>
       <line num="66" count="3" type="stmt"/>
       <line num="67" count="1" type="stmt"/>
+      <line num="71" count="1" type="stmt"/>
+      <line num="72" count="3" type="stmt"/>
+      <line num="74" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

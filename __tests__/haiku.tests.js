@@ -1,4 +1,4 @@
-import { doubleVowelRemover, vowelCounter, eilizer, deleteSilent, exemption, doTheDangThang } from '../src/js/haiku.js';
+import { doubleVowelRemover, vowelCounter, eilizer, deleteSilent, exemption, doTheDangThang, addTheDangThang } from '../src/js/haiku.js';
 
 describe (vowelCounter, () => {
 
@@ -115,6 +115,13 @@ describe (doTheDangThang, () => {
   test ('should count the number of syllables in each element of a multi string array', () => {
     const inputArr = ["hey", "what", "are"];
     expect (doTheDangThang(inputArr)).toEqual([1, 1, 1]);
-  })
-})
+  });
+});
 
+describe (addTheDangThang, () => {
+
+  test ('should return the sum of an array of integers', () => {
+    const inputArr = [1,2,3];
+    expect (addTheDangThang(inputArr)).toEqual(6);
+  });
+});

@@ -67,13 +67,18 @@ export function doTheDangThang (arr) {
   return syllableCount;
 }
 
+export function addTheDangThang (arr) {
+  const summedArray = arr.reduce(function(currentValue, element) {
+    return element + currentValue;
+  }, 0)
+  return summedArray;
+}
+
 // export function syllableCounter(string) {
 //   const word = string.split("");
 // }
 
-export function lineChecker (obj) {
-  
-}
+
 
 
 
