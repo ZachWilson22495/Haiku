@@ -76,6 +76,16 @@ describe (doubleVowelRemover, () => {
 
 describe (deleteSilent, () => {
 
+  test ('should return initial string if word is three letters long or less', () => {
+    const inputString = new String("tee");
+    expect (deleteSilent(inputString)).toEqual("tee");
+  });
+  
+  test ('should return initial string if word only contains one vowel and is three letters long', () => {
+    const inputString = new String("the");
+    expect (deleteSilent(inputString)).toEqual("the")
+  });
+
   test ('should remove the final letter of a word if the letter is e', () => {
     const inputString = new String("crate");
     expect (deleteSilent(inputString)).toEqual("crat");
@@ -103,12 +113,50 @@ describe (exemption, () => {
     const inputString = new String("melded");
     expect (exemption(inputString)).toEqual("meldod");
   });
+  
+  test ('should change "eau" in any string to "eu" ', () => {
+    const inputString = new String("beautiful");
+    expect (exemption(inputString)).toEqual("beutiful");
+  });
 
   test ('should not edit a word if the word does not end with ted or ded', () => {
     const inputString = new String("bees");
     expect (exemption(inputString)).toEqual("bees");
   });
+
+  test ('should replace a string that has a length of 3 and starts with a and ends with y', () => {
+    const inputString = new String("any");
+    expect (exemption(inputString)).toEqual("taken")
+  });
+  
+  test ('shoul replace the "y" with "ay" in any word that ends with a consonant followed by a y', () => {
+    const inputString = new String("happy");
+    expect (exemption(inputString)).toEqual("happay");
+  });
+
+  test ('shoul not replace the "y" with "ay" in any word that ends with a consonant followed by a y', () => {
+    const inputString = new String("peppay");
+    expect (exemption(inputString)).toEqual("peppay");
+  });
+
+  test ('shoul not replace the "y" with "ay" in any word that ends with a consonant followed by a y', () => {
+    const inputString = new String("happey");
+    expect (exemption(inputString)).toEqual("happey");
+  });
+
+  test ('shoul not replace the "y" with "ay" in any word that ends with a consonant followed by a y', () => {
+    const inputString = new String("happiy");
+    expect (exemption(inputString)).toEqual("happiy");
+  });
+
+  test ('shoul not replace the "y" with "ay" in any word that ends with a consonant followed by a y', () => {
+    const inputString = new String("happuy");
+    expect (exemption(inputString)).toEqual("happuy");
+  });
+
 });
+
+
 
 describe (doTheDangThang, () => {
 

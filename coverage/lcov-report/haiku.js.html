@@ -24,14 +24,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>36/36</span>
+                <span class='fraction'>47/47</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>48/48</span>
             </div>
         
             
@@ -45,7 +45,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>34/34</span>
+                <span class='fraction'>45/45</span>
             </div>
         
             
@@ -130,28 +130,40 @@
 <a name='L72'></a><a href='#L72'>72</a>
 <a name='L73'></a><a href='#L73'>73</a>
 <a name='L74'></a><a href='#L74'>74</a>
-<a name='L75'></a><a href='#L75'>75</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -185,16 +197,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -212,13 +214,24 @@ export function exemption(string) {
   } else if (string.endsWith("ted")) {
     const saved = string.replace("ted", "tod");
     return saved;
-  } else {
+  } else if (string.includes("eau")) {
+    const saved = string.replace("eau", "eu");
+    return saved;
+  } else if (string.length === 3 &amp;&amp; ((string[0] === "a") || (string[0] === "e") || (string[0] === "i")) &amp;&amp; ((string.endsWith("y")) || (string.endsWith("o")))) {
+    const threeLetterSpecial = "taken";
+    return threeLetterSpecial;
+  } else if ((string.endsWith("y")) &amp;&amp; (((!string.endsWith("ay")) &amp;&amp; (!string.endsWith("ey")) &amp;&amp; (!string.endsWith("iy")) &amp;&amp; (!string.endsWith("oy")) &amp;&amp; (!string.endsWith("uy"))))) {
+    const saved = string.replace("y", "ay");
+    return saved;
+  }  else  { 
     return string;
   }
 }
 &nbsp;
 export function deleteSilent(string) {
-  if (string.endsWith("e")) {
+  if ((string.length &lt;= 3) &amp;&amp; ((string.includes("e")) &amp;&amp; !string.includes("a") &amp;&amp; !string.includes("i") &amp;&amp; !string.includes("o") &amp;&amp; !string.includes("u"))){
+    return string;
+  } else if (string.endsWith("e")) {
     const trimmed = string.replace("e", "");
     return trimmed;
   } else if (string.endsWith("ed")) {
@@ -258,16 +271,6 @@ export function vowelCounter(string) {
   return counter.length;
 }
 &nbsp;
-// export function sentanceVowelCount(string) {
-//   const vowelCount = (string) =&gt; {
-//     const seperatedString = string.split(" ");
-//     return (arrayElementVowelCounterFunction) =&gt; {
-//       const newStringArr = arrayElementVowelCounterFunction(stringArr);
-//       stringArr = {...newStringArr};
-//     }
-//   }
-// }
-&nbsp;
 export function doTheDangThang (arr) {
   const syllableCount = arr.map(e =&gt; vowelCounter(doubleVowelRemover(eilizer(deleteSilent(exemption(e))))));
   return syllableCount;
@@ -285,7 +288,7 @@ export function addTheDangThang (arr) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Feb 03 2022 13:53:42 GMT-0800 (Pacific Standard Time)
+                at Thu Feb 03 2022 16:04:50 GMT-0800 (Pacific Standard Time)
             </div>
         </div>
         <script src="prettify.js"></script>

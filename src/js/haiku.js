@@ -6,13 +6,24 @@ export function exemption(string) {
   } else if (string.endsWith("ted")) {
     const saved = string.replace("ted", "tod");
     return saved;
-  } else {
+  } else if (string.includes("eau")) {
+    const saved = string.replace("eau", "eu");
+    return saved;
+  } else if (string.length === 3 && ((string[0] === "a") || (string[0] === "e") || (string[0] === "i")) && ((string.endsWith("y")) || (string.endsWith("o")))) {
+    const threeLetterSpecial = "taken";
+    return threeLetterSpecial;
+  } else if ((string.endsWith("y")) && (((!string.endsWith("ay")) && (!string.endsWith("ey")) && (!string.endsWith("iy")) && (!string.endsWith("oy")) && (!string.endsWith("uy"))))) {
+    const saved = string.replace("y", "ay");
+    return saved;
+  }  else  { 
     return string;
   }
 }
 
 export function deleteSilent(string) {
-  if (string.endsWith("e")) {
+  if ((string.length <= 3) && ((string.includes("e")) && !string.includes("a") && !string.includes("i") && !string.includes("o") && !string.includes("u"))){
+    return string;
+  } else if (string.endsWith("e")) {
     const trimmed = string.replace("e", "");
     return trimmed;
   } else if (string.endsWith("ed")) {
